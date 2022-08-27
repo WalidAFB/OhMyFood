@@ -1,0 +1,153 @@
+// INDEX LOCATION DIV
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    color: #353535;
+
+        i {
+        margin: auto 15px;
+    }
+        p {
+        text-align: center;
+        padding-right: 20px;
+        font-weight: 600;
+    }
+}
+
+// INDEX DESCRIPTION DIV
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    background-color: #f6f6f6;
+    text-align: center;
+
+
+    h2 {
+        margin: 0 50px;
+        font-weight: 800;
+    }
+
+    h3 {
+        margin: 15px 0;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+// INDEX STEP DIV
+
+.step-container {
+    padding: 25px 20px;
+    
+    h2 {
+    font-weight: 800;
+    }
+}
+
+ol { 
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0 2%;
+
+    li {
+        display: flex;
+        align-items: center;
+        margin: 10% 0;
+        background-color: #f6f6f6;
+        height: 70px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 4px 13px 1px #d8d8d8;
+    }
+
+    i {
+        margin: 0 10%;
+        color: #353535;
+    }
+}
+
+ol li:before { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: counter(item) ""; 
+    color: white;
+    counter-increment: item;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: relative;
+    right: 10px;
+}
+
+// CARD SECTION 
+
+.card-container {
+    padding: 25px 20px;
+    background-color: #f6f6f6;
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+        margin: 0;
+    }
+    figure {
+        margin: 15px 0;
+        background-color: #fff;
+        box-shadow: 0 4px 13px 1px #d8d8d8;
+        border-radius: 15px;
+    }
+    
+    img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0
+    }
+
+    figcaption {
+        padding: 15px;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding: 5px 20px;
+
+    h1 {
+        text-rendering: geometricPrecision;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 5px 0;
+    }
+
+    i {
+        width: 30px;
+    }
+}
