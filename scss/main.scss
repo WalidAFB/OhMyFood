@@ -1,8 +1,11 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
+@import "./Utils/keyframes";
 @import "./Base/normalize";
 @import "./Base/typography";
-@import "./Base/box-sizing";
+@import "./Base/based";
+@import "./Pages/loader";
 @import "./Layout/header";
 @import "./Pages/home";
+@import "./Layout/menu";
 @import "./Composants/button";
