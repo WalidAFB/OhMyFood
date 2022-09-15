@@ -1,4 +1,4 @@
-.button--pink {
+.main-btn {
     display: block;
     margin: 15px auto;
     height: 50px;
@@ -9,4 +9,13 @@
     border-radius: 25px;
     box-shadow: 0 4px 6px 0px #c4c4c4;
     background: linear-gradient(175deg, $secondary-color, 55%, $primary-color);
+
+    &.menu-btn {
+        margin: 30px auto;
+    }
+
+    &:hover {
+        opacity: 0.9;
+        box-shadow: 0 4px 6px 0px #9c9c9c;
+    }
 }
