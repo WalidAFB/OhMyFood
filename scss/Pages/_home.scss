@@ -100,9 +100,23 @@ ol li:before {
 
 // CARD SECTION 
 
-.card-container-main {
+.card-container {
     padding: 25px 20px;
     background-color: #f6f6f6;
+
+    .card-container-home {
+        @media (min-width: $breakpoint-tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                width: 48%;
+                height: 100%;
+            }
+        }
+    }
 
     a {
         color: inherit;

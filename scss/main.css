@@ -563,16 +563,28 @@ ol li:before {
   right: 10px;
 }
 
-.card-container-main {
+.card-container {
   padding: 25px 20px;
   background-color: #f6f6f6;
 }
-.card-container-main a {
+@media (min-width: 768px) {
+  .card-container .card-container-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-container .card-container-home a {
+    width: 48%;
+    height: 100%;
+  }
+}
+.card-container a {
   color: inherit;
   text-decoration: inherit;
   margin: 0;
 }
-.card-container-main figure {
+.card-container figure {
   position: relative;
   margin: 15px 0;
   background-color: #fff;
@@ -580,7 +592,7 @@ ol li:before {
   border-radius: 15px;
   overflow: hidden;
 }
-.card-container-main img {
+.card-container img {
   position: relative;
   width: 100%;
   height: 170px;
@@ -588,22 +600,22 @@ ol li:before {
      object-fit: cover;
   overflow: hidden;
 }
-.card-container-main figcaption {
+.card-container figcaption {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
 }
-.card-container-main .btn-like {
+.card-container .btn-like {
   margin: 15px;
 }
-.card-container-main .fa-regular {
+.card-container .fa-regular {
   display: block;
   font-size: 26px;
   -webkit-animation: IconFlip 1s;
           animation: IconFlip 1s;
 }
-.card-container-main .fa-solid {
+.card-container .fa-solid {
   display: none;
   font-size: 26px;
   background: linear-gradient(175deg, #9356DC, 55%, #FF79DA);
@@ -613,20 +625,20 @@ ol li:before {
   -webkit-animation: IconFlip 1.2s ease-out;
           animation: IconFlip 1.2s ease-out;
 }
-.card-container-main .btn-like:hover .fa-regular {
+.card-container .btn-like:hover .fa-regular {
   display: none;
 }
-.card-container-main .btn-like:hover .fa-solid {
+.card-container .btn-like:hover .fa-solid {
   display: block;
   -webkit-animation: heartFill 0.6s ease-in-out forwards;
           animation: heartFill 0.6s ease-in-out forwards;
 }
-.card-container-main h4 {
+.card-container h4 {
   font-size: 18px;
   font-weight: 800;
   margin: 0;
 }
-.card-container-main p {
+.card-container p {
   margin: 5px 0 0 0;
 }
 
@@ -696,9 +708,8 @@ figure span {
 }
 
 .menu-container {
-  width: 95%;
   margin: auto;
-  padding: 0 5px;
+  padding: 0 15px;
 }
 .menu-container h2 {
   text-transform: uppercase;
@@ -753,7 +764,7 @@ figure span {
   flex-grow: 1;
   flex-direction: column;
   margin: 12px 0 12px 10px;
-  width: 200px;
+  width: 1px;
   cursor: pointer;
 }
 .menu-description h3 {

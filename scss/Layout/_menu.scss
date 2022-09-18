@@ -55,9 +55,8 @@
 }
 
 .menu-container {
-    width: 95%;
     margin: auto;
-    padding: 0 5px;
+    padding: 0 15px;
 
     h2 {
         text-transform: uppercase;
@@ -118,7 +117,7 @@
     flex-grow: 1;
     flex-direction: column;
     margin: 12px 0 12px 10px;
-    width: 200px;
+    width: 1px;
     cursor: pointer;
 
     h3 {
