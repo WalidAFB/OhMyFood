@@ -1,8 +1,3 @@
-@keyframes IconFlip {
-    0% {opacity:0;}
-    100% {opacity: 1;}
-}
-
 @keyframes spin {
     0% {rotate: 0deg;}
     100% {rotate: 360deg;}
@@ -37,9 +32,15 @@
     }
 }
 
+/* HEART ANIMATION */
+
 @keyframes heartFill {
     0% {
         width: 0%;
+        opacity: 0;
+    }
+
+    25% {
         opacity: 0;
     }
 
@@ -47,4 +48,9 @@
         width: 100%;
         opacity: 1;
     }
+}
+
+@keyframes IconFlip {
+    0% {opacity:0;}
+    100% {opacity: 1;}
 }
