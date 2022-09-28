@@ -36,6 +36,35 @@ object-fit: cover;
         font-size: 24px;
         padding-right: 15px;
     }
+
+    .btn-like {
+        margin: 15px;
+    }
+
+    .fa-regular {
+        display: block;
+        font-size: 26px;
+        animation: IconFlip 0.6s;
+    }
+    
+    .fa-solid {
+        display: none;
+        font-size: 26px;
+        background: linear-gradient(175deg, $primary-color, 55%, $secondary-color);
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .btn-like:hover {
+        .fa-regular{
+            display: none;
+        }
+
+        .fa-solid {
+            display: block;
+            animation: heartFill 0.9s ease-in-out forwards;
+        }
+    }
 }
 
 /* MENU CONTAINER RESPONSIVE */

@@ -7,14 +7,6 @@
     rotate: 360deg;
   }
 }
-@keyframes spin {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
 /* MENU APPEARING ANIMATION */
 @-webkit-keyframes fadeIn {
   0% {
@@ -772,6 +764,31 @@ ol li:before {
 .menu-title i {
   font-size: 24px;
   padding-right: 15px;
+}
+.menu-title .btn-like {
+  margin: 15px;
+}
+.menu-title .fa-regular {
+  display: block;
+  font-size: 26px;
+  -webkit-animation: IconFlip 0.6s;
+          animation: IconFlip 0.6s;
+}
+.menu-title .fa-solid {
+  display: none;
+  font-size: 26px;
+  background: linear-gradient(175deg, #9356DC, 55%, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.menu-title .btn-like:hover .fa-regular {
+  display: none;
+}
+.menu-title .btn-like:hover .fa-solid {
+  display: block;
+  -webkit-animation: heartFill 0.9s ease-in-out forwards;
+          animation: heartFill 0.9s ease-in-out forwards;
 }
 
 /* MENU CONTAINER RESPONSIVE */
